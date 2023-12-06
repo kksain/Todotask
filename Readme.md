@@ -47,7 +47,7 @@ Linting Tools: Check code formatting using Flake8 and Black.
 
 ## Installation
 Clone the repository:
-git clone https://github.com/yourusername/your-to-do-app.git
+git clone https://github.com/kksain/ToDoList.git
 
 ## Create a virtual environment and activate it:
 python3 -m venv venv
