@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "ff6a0637-08da-48ed-a39e-84cd261b61ab",
+		"name": "ToDoList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30308226"
+	},
+	"item": [
+		{
+			"name": "Create Todo Item",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "qwerty@123",
+						"username": "todo_admin"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Algobulls assigment \",\r\n  \"description\": \"Algobulls gives me a assigment of todo-list app.\",\r\n  \"status\": \"WORKING\",\r\n  \"due_date\": \"2023-12-07\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/todo/create/"
+			},
+			"response": []
+		},
+		{
+			"name": "Read Todo Item List",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "qwerty@123",
+						"username": "todo_admin"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/todo/list/"
+			},
+			"response": []
+		},
+		{
+			"name": "Read Todo Item",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "qwerty@123",
+						"username": "todo_admin"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/todos/1/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Todo Item",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "qwerty@123",
+						"username": "todo_admin"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"timestamp\": \"2023-12-06T08:58:14.077530Z\",\r\n    \"title\": \"Algobulls assigment\",\r\n    \"description\": \"Algobulls gives me a assigment of todo-list app.\",\r\n    \"due_date\": \"2023-12-06\",\r\n    \"status\": \"WORKING\",\r\n    \"tags\": []\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/todo/update/5/"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Todo Item",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "qwerty@123",
+						"username": "todo_admin"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/todo/delete/3/"
+			},
+			"response": []
+		}
+	]
+}
