@@ -27,7 +27,7 @@ A simple web-based To-Do List application built using Django and Django Rest Fra
 
 ## Navigate to the project directory:
 - cd todo_list
-- 
+  
 ## Install dependencies:
 pip install -r requirements.txt
 
